@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Giuseppe Vavala\'
+MAINTAINER Giuseppe Vavala'
 MAINTAINER Sergio Matone
 
 # ADD JAVA repo
