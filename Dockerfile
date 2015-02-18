@@ -1,13 +1,13 @@
 FROM ubuntu:14.04
 
-MAINTAINER Giuseppe Vavala'
+MAINTAINER Giuseppe Vavala\'
 MAINTAINER Sergio Matone
 
 # ADD JAVA repo
-RUN apt-get update
-RUN apt-get install python-software-properties software-properties-common -y
-RUN add-apt-repository ppa:webupd8team/java
-RUN apt-get update
+RUN apt-get update && install -y \
+  python-software-properties \
+  software-properties-common
+RUN add-apt-repository ppa:webupd8team/java && apt-get update
 
 # Install Java
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
