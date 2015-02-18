@@ -4,7 +4,7 @@ MAINTAINER Giuseppe Vavala'
 MAINTAINER Sergio Matone
 
 # ADD JAVA repo
-RUN apt-get update && install -y \
+RUN apt-get update && apt-get install -y \
   python-software-properties \
   software-properties-common
 RUN add-apt-repository ppa:webupd8team/java && apt-get update
